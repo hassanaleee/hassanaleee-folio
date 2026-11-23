@@ -90,8 +90,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNav }) => {
 
   return (
     <header className="site-header">
-      {/* Top floating bar: Wordmark + Theme Toggle + Menu */}
       <div className="header-inner">
+        {/* Logo / Wordmark */}
         <a
           href="#hero-wrap"
           className="wordmark"
@@ -101,6 +101,21 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNav }) => {
           <span className="wordmark-text">{personalInfo.name.split(' ')[0]}</span>
         </a>
 
+        {/* Unified Desktop Navigation Tabs — Crisp, High-Contrast & Clearly Seeable */}
+        <nav className="header-nav-inline" aria-label="Section navigation">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className={`nav-tab-link ${activeSection === item.id ? 'active' : ''}`}
+              onClick={(e) => handleTabClick(e, item.href)}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* Header Actions */}
         <div className="header-actions">
           <button
             type="button"
@@ -122,22 +137,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNav }) => {
           </button>
         </div>
       </div>
-
-      {/* Second row: Minimal navigation tabs pill */}
-      <nav className="header-nav-tabs" aria-label="Section navigation">
-        <div className="nav-tabs-scroll">
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className={`nav-tab-link ${activeSection === item.id ? 'active' : ''}`}
-              onClick={(e) => handleTabClick(e, item.href)}
-            >
-              {item.label}
-            </a>
-          ))}
-        </div>
-      </nav>
     </header>
   );
 };
