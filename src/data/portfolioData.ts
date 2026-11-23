@@ -13,6 +13,8 @@ export const personalInfo = {
     location: "Lahore, Pakistan",
   },
   email: "hassankazmi2004@gmail.com",
+  phone: "+92 333 7184344",
+  whatsapp: "https://wa.me/923337184344?text=Hi%20Hassan%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project.",
   github: "https://github.com/hassanaleee",
   linkedin: "https://www.linkedin.com/in/hassan-kazmi-544892340/",
   location: "Lahore, Pakistan",
@@ -48,6 +50,8 @@ export const personalInfo = {
     "Workflow automation"
   ],
   email: "hassankazmi2004@gmail.com",
+  phone: "+92 333 7184344",
+  whatsapp: "https://wa.me/923337184344?text=Hi%20Hassan%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project.",
   github: "https://github.com/hassanaleee",
   linkedin: "https://www.linkedin.com/in/hassan-kazmi-544892340/",
   world: {

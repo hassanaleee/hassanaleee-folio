@@ -1784,14 +1784,22 @@ main#main {
   margin: 0 0 32px 0;
 }
 
-.email-block {
+.contact-direct-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.email-block,
+.phone-block {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
 }
 
-.email-link {
+.email-link,
+.phone-link {
   font-size: clamp(16px, 2.2vw, 24px);
   font-weight: 600;
   color: var(--sc-ink);
@@ -1805,7 +1813,8 @@ main#main {
   transition: color 0.2s, border-color 0.2s;
 }
 
-.email-link:hover {
+.email-link:hover,
+.phone-link:hover {
   color: var(--sc-ink-soft);
   border-color: var(--sc-ink-soft);
 }
