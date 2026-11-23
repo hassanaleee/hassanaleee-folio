@@ -7,7 +7,7 @@ import { PortraitJourney } from './PortraitJourney';
 
 export const AboutSection: React.FC = () => {
   return (
-    <section className="about-section relative" id="about">
+    <section className="about-section relative">
       <PortraitJourney />
       <Hero />
       <Biography />

@@ -5,8 +5,8 @@ import { personalInfo } from '../data/portfolioData';
 import { GlyphBackground } from './GlyphBackground';
 
 export const Hero: React.FC = () => {
-  const word1 = 'MACHINE';
-  const word2 = 'LEARNING';
+  const word1 = 'AI/ML';
+  const word2 = 'ENGINEER';
 
   return (
     <div className="hero wrap" id="hero-wrap">
@@ -18,40 +18,6 @@ export const Hero: React.FC = () => {
         interactive={true}
       />
 
-      {/* Top professional identity label & primary CTA */}
-      <div className="hero-top-composition" aria-label="Professional Identity">
-        <div className="hero-top-badge">
-          <span className="hero-status-pulse" aria-hidden="true" />
-          <span className="hero-role-title">
-            Hassan Kazmi <span className="hero-role-sep">—</span> AI/ML Engineer &amp; Managing Partner at Zeploy
-          </span>
-        </div>
-        <div className="hero-top-actions">
-          <a href="#projects" className="hero-cta-btn primary">
-            <span>View Projects</span>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M1 11L11 1M11 1H3M11 1V9"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
-          <a href="#contact" className="hero-cta-btn secondary">
-            <span>Let&apos;s Talk</span>
-          </a>
-        </div>
-      </div>
-
       {/* Anchor frame for the single traveling 3D portrait */}
       <a
         href="#biography"
@@ -59,9 +25,16 @@ export const Hero: React.FC = () => {
         aria-label={`About ${personalInfo.name}`}
       />
 
+      {/* Centered Name and Introduction */}
+      <div className="hero-intro-composition" aria-label="Personal Introduction">
+        <h2 className="hero-intro-name">{personalInfo.name}</h2>
+        <p className="hero-intro-role">{personalInfo.role.toUpperCase()}</p>
+        <p className="hero-intro-tagline">&ldquo;{personalInfo.headline}&rdquo;</p>
+      </div>
+
       {/* Large typographic headline */}
       <div className="hero-heading-composition">
-        <h1 className="hero-title hero-display-title" aria-label="AI & Machine Learning Engineer">
+        <h1 className="hero-title hero-display-title" aria-label="AI/ML Engineer">
           <span className="title-line block">
             <span className="hero-word">
               <span className="hero-code-open hero-code-mark" aria-hidden="true">

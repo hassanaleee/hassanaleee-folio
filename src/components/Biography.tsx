@@ -6,7 +6,8 @@ import { personalInfo } from '../data/portfolioData';
 
 export const Biography: React.FC = () => {
   return (
-    <div className="biography wrap" id="biography">
+    <div className="biography wrap" id="about">
+      <span id="biography" className="sr-only" />
       <div className="bio-introduction">
         <h2>
           Hi, I&apos;m
