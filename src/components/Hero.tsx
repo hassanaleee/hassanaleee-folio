@@ -18,10 +18,38 @@ export const Hero: React.FC = () => {
         interactive={true}
       />
 
-      {/* Top professional identity label */}
-      <div className="hero-top-role-composition" aria-label="Professional Role">
-        <span className="hero-status-pulse" aria-hidden="true" />
-        <span className="hero-role-title">AI &amp; MACHINE LEARNING ENGINEER</span>
+      {/* Top professional identity label & primary CTA */}
+      <div className="hero-top-composition" aria-label="Professional Identity">
+        <div className="hero-top-badge">
+          <span className="hero-status-pulse" aria-hidden="true" />
+          <span className="hero-role-title">
+            Hassan Kazmi <span className="hero-role-sep">—</span> AI/ML Engineer &amp; Managing Partner at Zeploy
+          </span>
+        </div>
+        <div className="hero-top-actions">
+          <a href="#projects" className="hero-cta-btn primary">
+            <span>View Projects</span>
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M1 11L11 1M11 1H3M11 1V9"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#contact" className="hero-cta-btn secondary">
+            <span>Let&apos;s Talk</span>
+          </a>
+        </div>
       </div>
 
       {/* Anchor frame for the single traveling 3D portrait */}

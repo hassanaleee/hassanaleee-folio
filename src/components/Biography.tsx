@@ -35,9 +35,10 @@ export const Biography: React.FC = () => {
 
       <div className="bio-description">
         <p className="bio-lead">
-          I work across <strong>artificial intelligence</strong>,{' '}
-          <strong>machine learning</strong>, and <strong>software systems</strong>, building practical
-          applications that turn complex ideas into useful solutions.
+          I engineer and ship <strong>production LLM applications</strong>,{' '}
+          <strong>hybrid RAG pipelines</strong>, and autonomous <strong>agentic workflows</strong>.
+          From scalable vector search architectures to resilient backend infrastructure, I build full-stack AI
+          systems designed for real-world reliability, sub-second latency, and measurable impact.
         </p>
 
         <div className="bio-actions">

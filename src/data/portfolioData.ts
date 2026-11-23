@@ -8,8 +8,8 @@ export const personalInfo = {
     "I work across artificial intelligence, machine learning and software systems, building practical applications that turn complex ideas into useful solutions.",
   currentRole: {
     status: "Active Engineering",
-    title: "AI & Machine Learning Engineer",
-    organization: "COMSATS University Islamabad",
+    title: "Managing Partner & AI/ML Engineer",
+    organization: "Zeploy Tech",
     location: "Lahore, Pakistan",
   },
   email: "hassankazmi2004@gmail.com",
@@ -127,6 +127,7 @@ export const projects: Project[] = [
   {
     id: "mockai",
     title: "MockAI",
+    outcomeHighlight: "Multimodal AI interview evaluation with sub-15s report turnaround.",
     shortDescription:
       "Research-oriented multimodal interview evaluation platform leveraging speech-to-text, NLP scoring, and real-time facial emotion detection to assess confidence and technical communication.",
     category: "Multimodal AI & Speech Processing",
@@ -213,6 +214,7 @@ export const projects: Project[] = [
   {
     id: "intelligence-os",
     title: "Intelligence OS",
+    outcomeHighlight: "Private multi-tenant RAG platform with hybrid dense + sparse search.",
     shortDescription:
       "Enterprise-grade private RAG platform built with strict multi-tenant data isolation, hybrid vector + full-text search with Reciprocal Rank Fusion, and asynchronous document parsing.",
     category: "Generative AI & Enterprise RAG",
@@ -292,6 +294,7 @@ export const projects: Project[] = [
   {
     id: "zeploy",
     title: "Zeploy",
+    outcomeHighlight: "Developer cloud deployment console with automated build telemetry.",
     shortDescription:
       "Modern cloud infrastructure and deployment management interface built for automated project deployment, environment configurations, and streamlined developer workflows.",
     category: "Cloud Tooling & Developer Infrastructure",
@@ -353,6 +356,7 @@ export const projects: Project[] = [
   {
     id: "stocksync",
     title: "StockSync",
+    outcomeHighlight: "Transactional inventory reconciliation & low-stock automated alerts.",
     shortDescription:
       "Full-stack inventory and order fulfillment management system for online merchants featuring atomic stock reconciliation, supplier workflows, and visual sales analytics.",
     category: "Full-Stack Web Development",

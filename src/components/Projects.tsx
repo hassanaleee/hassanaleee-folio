@@ -88,13 +88,15 @@ export const Projects: React.FC = () => {
                 {/* Preview Paper */}
                 <span className="folder-paper folder-paper-preview">
                   {project.image ? (
-                    <Image
-                      src={project.image}
-                      alt=""
-                      width={600}
-                      height={360}
-                      className="folder-preview-img"
-                    />
+                    <div className="folder-thumb-frame">
+                      <Image
+                        src={project.image}
+                        alt=""
+                        width={600}
+                        height={360}
+                        className="folder-preview-img"
+                      />
+                    </div>
                   ) : (
                     <span className="folder-case-preview">
                       <span>{project.companyOrContext}</span>
@@ -123,12 +125,19 @@ export const Projects: React.FC = () => {
                 </span>
               </span>
 
-              {/* Folder Caption */}
-              <span className="folder-caption">
-                <span>{project.category}</span>
-                <span className="folder-caption-action">
-                  <span>Explore</span>
-                  <ArrowRight size={14} />
+              {/* Folder Caption & Outcome Highlight */}
+              <span className="folder-caption-block">
+                {project.outcomeHighlight && (
+                  <span className="folder-outcome-highlight">
+                    {project.outcomeHighlight}
+                  </span>
+                )}
+                <span className="folder-caption">
+                  <span>{project.category}</span>
+                  <span className="folder-caption-action">
+                    <span>Explore</span>
+                    <ArrowRight size={14} />
+                  </span>
                 </span>
               </span>
             </button>

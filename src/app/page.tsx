@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Header } from '../components/Header';
 import { NavDialog } from '../components/NavDialog';
 import { AboutSection } from '../components/AboutSection';
+import { ImpactMetrics } from '../components/ImpactMetrics';
 import { TechStack } from '../components/TechStack';
 import { Projects } from '../components/Projects';
 import { Experience } from '../components/Experience';
@@ -32,6 +33,7 @@ export default function Home() {
       <main id="main">
         {/* AboutSection combines Hero and Biography */}
         <AboutSection />
+        <ImpactMetrics />
         <TechStack />
         <Projects />
         <Experience />

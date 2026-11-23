@@ -2,6 +2,7 @@ export interface Project {
   id: string;
   title: string;
   shortDescription: string;
+  outcomeHighlight?: string;
   category: string;
   companyOrContext: string;
   technologies: string[];
