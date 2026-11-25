@@ -25,6 +25,13 @@ export const Hero: React.FC = () => {
         aria-label={`About ${personalInfo.name}`}
       />
 
+      {/* Centered Name and Introduction */}
+      <div className="hero-intro-composition" aria-label="Personal Introduction">
+        <h2 className="hero-intro-name">{personalInfo.name}</h2>
+        <p className="hero-intro-role">{personalInfo.role.toUpperCase()}</p>
+        <p className="hero-intro-tagline">&ldquo;{personalInfo.headline}&rdquo;</p>
+      </div>
+
       {/* Large typographic headline */}
       <div className="hero-heading-composition">
         <h1 className="hero-title hero-display-title" aria-label="AI/ML Engineer">
